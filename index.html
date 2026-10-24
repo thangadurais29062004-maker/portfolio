@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Thanga Durai S, Python Developer from Trichy, India." />
+  <title>Thanga Durai | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="bg"></canvas>
+
+  <!-- NAV -->
+  <header class="nav">
+    <a href="#home" class="logo">TD<span>.</span></a>
+    <button class="menu-btn" aria-label="Toggle menu">&#9776;</button>
+    <nav class="links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Hi, I'm</p>
+        <h1>Thanga Durai <span class="grad">S</span></h1>
+        <p class="role"><span id="typing"></span><span class="cursor">|</span></p>
+        <p class="lead">
+          Fresher Python developer from Trichy who loves turning data into
+          useful, working projects.
+        </p>
+        <div class="btns">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn ghost">Contact Me</a>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint">scroll &darr;</a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2 class="title reveal"><span>01.</span> About Me</h2>
+      <div class="about-grid">
+        <div class="glass reveal">
+          <p>
+            I'm a B.Tech Information Technology student at Dhanalakshmi
+            Srinivasan University, Trichy, graduating in 2026. I enjoy working
+            with Python, data analysis and machine learning, and I like
+            building small projects that solve real problems.
+          </p>
+          <p>
+            I speak Tamil and English, and I'm looking for an entry-level
+            Python Developer role where I can learn fast and contribute.
+          </p>
+        </div>
+        <div class="stats reveal">
+          <div class="glass stat"><b>2022&ndash;26</b><span>B.Tech IT</span></div>
+          <div class="glass stat"><b>Python</b><span>Main language</span></div>
+          <div class="glass stat"><b>ML</b><span>Learning &amp; building</span></div>
+          <div class="glass stat"><b>Trichy</b><span>Tamil Nadu, India</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2 class="title reveal"><span>02.</span> Skills</h2>
+      <div class="skills-grid">
+        <div class="glass tilt reveal">
+          <h3>Languages</h3>
+          <div class="chips"><span>Python</span><span>SQL</span></div>
+        </div>
+        <div class="glass tilt reveal">
+          <h3>Data &amp; ML</h3>
+          <div class="chips">
+            <span>NumPy</span><span>Pandas</span><span>Matplotlib</span>
+            <span>Machine Learning</span><span>SpeechRecognition</span>
+          </div>
+        </div>
+        <div class="glass tilt reveal">
+          <h3>Tools</h3>
+          <div class="chips"><span>Git</span><span>Jupyter Notebook</span><span>VS Code</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2 class="title reveal"><span>03.</span> Projects</h2>
+      <div class="projects-grid">
+        <article class="glass tilt reveal">
+          <h3>Real-Time Fraud Detection Pipeline</h3>
+          <p>Kafka streams transactions to Spark, which adds per-user 5-minute features, and an XGBoost model (best PR-AUC 0.695 among 3 models) scores each one as allow, review or block.</p>
+          <p>Results are stored in PostgreSQL and Redis with a live Streamlit dashboard. On held-out data it flagged 75% of fraud, with the block zone 79% fraud.</p>
+          <div class="chips small"><span>Python</span><span>Kafka</span><span>Spark</span><span>XGBoost</span><span>PostgreSQL</span><span>Redis</span><span>Streamlit</span></div>
+          <a href="https://github.com/thangadurais29062004-maker" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+        </article>
+
+        <article class="glass tilt reveal">
+          <h3>Retail X: Demand Forecasting Platform</h3>
+          <p>An AI-powered platform for real-time retail demand forecasting and market intelligence, built to support data-driven business decisions.</p>
+          <p>Uses data analysis and machine learning to find demand patterns and generate actionable business insights.</p>
+          <div class="chips small"><span>Python</span><span>Machine Learning</span><span>Data Analysis</span></div>
+          <a href="https://github.com/thangadurais29062004-maker" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+        </article>
+
+        <article class="glass tilt reveal">
+          <h3>TruthLens AI: Image Verification App</h3>
+          <p>A local web app that classifies images as likely real, likely AI-generated, or uncertain, using a Vision Transformer (ViT-Small) exported to ONNX.</p>
+          <p>An abstention policy scores each image three ways and only gives a verdict when all agree: 92.4% accuracy on the 448 of 600 images it decided. Includes EXIF, recompression, face and C2PA checks, user accounts, a job queue, PDF/JSON reports, Docker Compose with Caddy HTTPS, and 48 unit tests.</p>
+          <div class="chips small"><span>Python</span><span>ONNX Runtime</span><span>Vision Transformer</span><span>SQLite</span><span>Docker</span></div>
+          <a href="https://github.com/thangadurais29062004-maker/TruthLens-Uncertain" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <h2 class="title reveal"><span>04.</span> Get In Touch</h2>
+      <div class="glass reveal contact-card">
+        <p>
+          I'm open to entry-level Python Developer opportunities. Say hello
+          on LinkedIn or check my code on GitHub.
+        </p>
+        <div class="btns">
+          <a class="btn primary" href="https://linkedin.com/in/thangadurai45" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn ghost" href="https://github.com/thangadurais29062004-maker" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Thanga Durai S &middot; Built with Three.js</p>
+  </footer>
+
+  <script type="importmap">
+    { "imports": { "three": "https://unpkg.com/three@0.160.0/build/three.module.js" } }
+  </script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
