@@ -3,7 +3,7 @@ import * as THREE from 'three';
 /* ---------- 3D BACKGROUND (light theme) ---------- */
 const canvas = document.querySelector('#bg');
 const scene = new THREE.Scene();
-scene.fog = new THREE.FogExp2(0xf6f7fb, 0.028);
+scene.fog = new THREE.FogExp2(0xe6f4ff, 0.028);
 
 const camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 0.1, 200);
 camera.position.z = 9;
